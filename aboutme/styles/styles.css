@@ -1,24 +1,145 @@
-aside {
-    width: 20em;
-    margin: 1em;
-    border: 1px solid rgba(0, 0, 0, 0.2); /* why use rgba instead of hex here? */
-    padding: 1em;
-    background-color: #eee;
-    color: #333;
-    text-align: center;
+/*paso 10 week 4  More Centering*/
+
+nav a {
+  text-align: center;
+}
+
+#hero-msg h1, #hero-msg h4 {
+  text-align: center;
+}
+
+.button-box {
+  text-align: center;
+}
+
+main section {
+  text-align: center;
+}
+
+
+/*paso 11 week 4  Adding a container for our message background*/
+
+#background {
+  height: 725px;
+}
+
+/*paso 12 week 4 Setting background colors*/
+/* Aplicar colores de fondo */
+body {
+  background-color: #fcfbfb; /* Color de fondo para el cuerpo de la página */
+}
+
+header {
+  background-color: rgba(20,30,13, .7); /* Color de fondo para el encabezado */
+}
+
+nav a:hover {
+  background-color: #0b0c0c; /* Color de fondo al pasar el mouse sobre enlaces de navegación */
+  color: #FFF; /* Cambiar el color del texto al pasar el mouse */
+}
+
+.book,
+.join {
+  background-color: #FF5733; /* Color de fondo para los elementos con clase .book y .join */
+  color: #FFF; /* Cambiar el color del texto */
+}
+
+.book:hover,
+.join:hover {
+  background-color: #d56238; /* Color de fondo al pasar el mouse sobre elementos con clase .book y .join */
+  color: #FFF; /* Cambiar el color del texto al pasar el mouse */
+}
+
+#background {
+  background-color: #787575; /* Color de fondo para el contenedor de fondo */
+}
+
+.msg {
+  background-color: rgba(20,30,13, .7); /* Color de fondo para el mensaje */
+  color: #FFF; /* Cambiar el color del texto en el mensaje */
+}
+
+footer {
+  background-color: #333; /* Color de fondo para el pie de página */
+  color: #FFF; /* Cambiar el color del texto en el pie de página */
+}
+
+/*paso 13 week 4 */
+/* Cambiar colores del texto */
+nav a {
+  color: #dedcdc; /* Color del texto en los enlaces de navegación */
+}
+
+nav a:hover {
+  color: #FFF; /* Color del texto al pasar el mouse sobre enlaces de navegación */
+}
+
+.home-title {
+  color: #0074D9; /* Color del texto en el título de inicio */
+}
+
+h4 {
+  color: #999494; /* Color del texto en los encabezados h4 */
+}
+
+.book,
+.join {
+  color: #FFF; /* Color del texto en elementos con clase .book y .join */
+}
+
+.book:hover,
+.join:hover {
+  color: #FFF; /* Color del texto al pasar el mouse sobre elementos con clase .book y .join */
+}
+
+.msg h2 {
+  color: #cfc8c8; /* Color del texto en el título h2 dentro del mensaje */
+}
+
+.msg p {
+  color: #c6bdbd; /* Color del texto en párrafos dentro del mensaje */
+}
+
+footer {
+  color: #FFF; /* Color del texto en el pie de página */
+}
+
+footer a {
+  color: #d2dde3; /* Color del texto en enlaces dentro del pie de página */
+}
+
+footer a:hover {
+  color: #FFF; /* Color del texto al pasar el mouse sobre enlaces dentro del pie de página */
+}
+
+/*paso 14 week 4 Foreground colors*/
+.logo, .icon {
+  width: 80px; /* Ancho de 80px para el logotipo y los iconos */
+}
+#hero-img {
+  width: 100%; /* Ancho del 100% para la imagen del héroe */
+}
+
   
-  
-  }
-  aside img {
-    width: 200px;
-    height: auto;
-  }
-  main img {
-    width: 150px;
-    height: auto;
-  }
-  footer {
-    margin-top: 1em;
-    border-top: 1px solid #000;
-    text-align: center;
-  }
+/*paso 15 week 4  Take off or add the default underline of links */
+
+/* Quitar subrayas de los enlaces y agregarlas al pasar el mouse */
+nav a,
+.book,
+.join,
+footer a {
+ text-decoration: none; /* Quitar subraya */
+}
+
+nav a:hover,
+.book:hover,
+.join:hover,
+footer a:hover {
+ text-decoration: underline; /* Agregar subraya al pasar el mouse */
+}
+/* Tamaño de fuente más grande para el texto del pie de página */
+footer p {
+  font-size: 1.2em; /* Tamaño de fuente más grande (ajusta el valor según sea necesario) */
+}
+
+   

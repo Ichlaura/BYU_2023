@@ -1,4 +1,148 @@
+/*step 1 week 5*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+
+
+
+
+/* Cambiar la fuente del cuerpo */
+body {
+   font-family: 'Roboto', sans-serif; /* 'Roboto' es la primera opción y 'sans-serif' es una fuente de respaldo */
+ }
+ 
+ /* Cambiar la fuente de los titulares */
+ h1, h2, h3, h4, h5, h6 {
+   font-family: 'Montserrat', sans-serif; /* 'Montserrat' es la primera opción y 'sans-serif' es una fuente de respaldo */
+ }
+
+
+ /*step 2 week 5*/
+
+/* Aumentar el tamaño de fuente predeterminado para toda la página */
+body {
+   font-size: 22px;
+ }
+ 
+ /* Cambiar el tamaño de fuente para el título principal */
+ .home-title {
+   font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
+   font-size: 2em; /* Hacerlo dos veces más grande que el tamaño de fuente predeterminado */
+ }
+ 
+ /* Cambiar el tamaño de fuente para los selectores específicos */
+ .book, .join {
+   font-size: 18px;
+ }
+ 
+ .msg p {
+   font-size: 0.8em; /* Reducir el tamaño de fuente a 80% del tamaño predeterminado */
+ }
+ 
+ /* Aumentar el espacio entre líneas para la sección con la clase 'msg' */
+ .msg {
+   background-color: #6f7364;
+   line-height: 1.5em; /* Dar un espacio entre líneas un 150% del tamaño de fuente */
+ }
+ 
+/*step 3 week 5 */
+
+/* Reset de margen y relleno para el elemento <body> */
+body {
+  background-color: #fcfbfb;
+  font-family: Raleway, Arial, sans-serif;
+  font-size: 22px;
+  margin: 0; /* Establece el margen en 0 */
+  padding: 0; /* Establece el relleno en 0 */
+}
+
+/* Reset de margen para los elementos <h2> */
+h2 {
+  margin: 0; /* Establece el margen en 0 */
+}
+/*step 4 week 5 */ 
+
+#logo_link {
+   padding-top: 5px;
+ }
+ 
+ nav a {
+   text-decoration: none;
+   color: #fcfbfb;
+   text-align: center;
+   padding: 35px;
+ }
+ 
+ .book, .join {
+   padding: 15px 30px; /* 15px de relleno superior e inferior, 30px de relleno izquierdo y derecho */
+ }
+ 
+ .icon {
+   padding-top: 10px;
+ }
+ 
+ .msg {
+   padding: 35px;
+ }
+ 
+ .msg p {
+   padding-bottom: 15px;
+ }
+ 
+ footer {
+   padding: 25px 50px; /* 25px de relleno superior e inferior, 50px de relleno izquierdo y derecho */
+ }
+ 
+ footer .social img {
+   padding-top: 15px;
+ }
+ /*step 5 week 5 adding margins*/ 
+ .home-title {
+   margin-top: 10px;
+ }
+ 
+ .book, .join {
+   background-color: #d9c2a3;
+   color: black;
+   text-decoration: none;
+   font-size: 18px;
+   padding: 15px 30px;
+   margin-top: 50px;
+ }
+ 
+ .rivers-card, .camping-card, .rapids-card {
+   margin: 200px 0; /* 200px de margen superior e inferior, 0 de margen izquierdo y derecho */
+ }
+ 
+ footer {
+   margin-top: 200px;
+ }
+ /*step 6  week 5 adding borders, border radius and box-sizing*/
+ .book, .join {
+   background-color: #d9c2a3;
+   color: black;
+   text-decoration: none;
+   font-size: 18px;
+   padding: 15px 30px;
+   margin-top: 50px;
+   border-radius: 5px; /* Añadir radio de borde de 5px */
+ }
+ 
+ .card-img {
+   border: 10px solid #d9c2a3; /* Añadir un borde sólido de 10px con el color de tu elección */
+ }
+ 
+ main section img {
+   box-sizing: border-box; /* Establecer box-sizing como border-box para incluir el borde en el tamaño de las imágenes */
+ }
+ 
+ /*step 7  week 5 Check, validate, and submit*/
+
+
 /*paso 10 week 4  More Centering*/
+
+
 
 nav a {
     text-align: center;
@@ -40,13 +184,13 @@ body {
  
  .book,
  .join {
-    background-color: #FF5733; /* Color de fondo para los elementos con clase .book y .join */
+    background-color: #3273f4; /* Color de fondo para los elementos con clase .book y .join */
     color: #FFF; /* Cambiar el color del texto */
  }
  
  .book:hover,
  .join:hover {
-    background-color: #d56238; /* Color de fondo al pasar el mouse sobre elementos con clase .book y .join */
+    background-color: #3881d5; /* Color de fondo al pasar el mouse sobre elementos con clase .book y .join */
     color: #FFF; /* Cambiar el color del texto al pasar el mouse */
  }
  

@@ -1,443 +1,507 @@
-/*step 1 week 5*/
-
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Poppins:wght@200;300;400&family=Sofia&display=swap');
 
 
-/* Cambiar la fuente del cuerpo */
-body {
-   font-family: 'Roboto', sans-serif; /* 'Roboto' es la primera opción y 'sans-serif' es una fuente de respaldo */
- }
- 
- /* Cambiar la fuente de los titulares */
- h1, h2, h3, h4, h5, h6 {
-   font-family: 'Montserrat', sans-serif; /* 'Montserrat' es la primera opción y 'sans-serif' es una fuente de respaldo */
- }
+:root {
+    /* create color pallete */
+    --primary-color: #ffecd1ff;
+    --secondary-color: #15616dff;
+    --accent1-color: rgb(28, 111, 132);
+    --accent2-color: rgb(15, 76, 120);
 
+    --viridian-green: #119da4ff;
+    --teal-blue: #0c7489ff;
+    --midnight-green-eagle-green: #13505bff;
+    --rich-black-fogra-39: #040404ff;
+    --timberwolf: #d7d9ceff;
 
- /*step 2 week 5*/
+    /* create font family and font size */
 
-/* Aumentar el tamaño de fuente predeterminado para toda la página */
-body {
-   font-size: 22px;
- }
- 
- /* Cambiar el tamaño de fuente para el título principal */
- .home-title {
-   font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
-   font-size: 2em; /* Hacerlo dos veces más grande que el tamaño de fuente predeterminado */
- }
- 
- /* Cambiar el tamaño de fuente para los selectores específicos */
- .book, .join {
-   font-size: 18px;
- }
- 
- .msg p {
-   font-size: 0.8em; /* Reducir el tamaño de fuente a 80% del tamaño predeterminado */
- }
- 
- /* Aumentar el espacio entre líneas para la sección con la clase 'msg' */
- .msg {
-   background-color: #6f7364;
-   line-height: 1.5em; /* Dar un espacio entre líneas un 150% del tamaño de fuente */
- }
- 
-/*step 3 week 5 */
+    --heading-font: Sofia, Helvetica, sans-serif;
+    --paragraph-font: Poppins, Helvetica, sans-serif;
+    --home-title-font-family: Sofia, Helvetica, sans-serif;
 
-/* Reset de margen y relleno para el elemento <body> */
-body {
-  background-color: #fcfbfb;
-  font-family: Raleway, Arial, sans-serif;
-  font-size: 22px;
-  margin: 0; /* Establece el margen en 0 */
-  padding: 0; /* Establece el relleno en 0 */
+    --header-font-size-xsmall: 1.5em;
+    --header-font-size-small: 3em;
+    --header-font-size-large: 3em;
+    --paragraph-font-size-xsmall: 0.75em;
+    --paragraph-font-size-small: 1em;
+    --paragraph-font-size-medium: 1.5em;
+    --paragraph-font-size-large: 2em;
+    --book-font-size: 18px;
+    --join-font-size: 18px;
+    --home-title-font-size: 4em;
+    --msg-p-font-size: .8em;
+
+    --headline-color-on-white: #66a9da;
+    /* headlines on a white background */
+    --headline-color-on-color: #ffffff;
+    /* headlines on a colored background */
+    --paragraph-color-on-white: #396E94;
+    /* paragraph text on a white background */
+    --paragraph-color-on-color: #ffecd1ff;
+    /* paragraph text on a colored background */
+    --paragraph-background-color: #15616dff;
+    --nav-link-color: #ffffff;
+    --nav-background-color: #13505bff;
+    --nav-hover-link-color: white;
+    --nav-hover-background-color: #032136;
+    --nav-font-size: 1em;
 }
 
-/* Reset de margen para los elementos <h2> */
+* {
+    border-radius: 10px;
+
+}
+
+body {
+    font-family: var(--paragraph-font);
+    color: var(--teal-blue);
+    background-color: var(--primary-color);
+    margin: 0;
+    padding: 0;
+}
+
 h2 {
-  margin: 0; /* Establece el margen en 0 */
-}
-/*step 4 week 5 */ 
-
-#logo_link {
-   padding-top: 5px;
- }
- 
- nav a {
-   text-decoration: none;
-   color: #fcfbfb;
-   text-align: center;
-   padding: 35px;
- }
- 
- .book, .join {
-   padding: 15px 30px; /* 15px de relleno superior e inferior, 30px de relleno izquierdo y derecho */
- }
- 
- .icon {
-   padding-top: 10px;
- }
- 
- .msg {
-   padding: 35px;
- }
- 
- .msg p {
-   padding-bottom: 15px;
- }
- 
- footer {
-   padding: 25px 50px; /* 25px de relleno superior e inferior, 50px de relleno izquierdo y derecho */
- }
- 
- footer .social img {
-   padding-top: 15px;
- }
- /*step 5 week 5 adding margins*/ 
- .home-title {
-   margin-top: 10px;
- }
- 
- .book, .join {
-   background-color: #d9c2a3;
-   color: black;
-   text-decoration: none;
-   font-size: 18px;
-   padding: 15px 30px;
-   margin-top: 50px;
- }
- 
- .rivers-card, .camping-card, .rapids-card {
-   margin: 200px 0; /* 200px de margen superior e inferior, 0 de margen izquierdo y derecho */
- }
- 
- footer {
-   margin-top: 200px;
- }
- /*step 6  week 5 adding borders, border radius and box-sizing*/
- .book, .join {
-   background-color: #d9c2a3;
-   color: black;
-   text-decoration: none;
-   font-size: 18px;
-   padding: 15px 30px;
-   margin-top: 50px;
-   border-radius: 5px; /* Añadir radio de borde de 5px */
- }
- 
- .card-img {
-   border: 10px solid #d9c2a3; /* Añadir un borde sólido de 10px con el color de tu elección */
- }
- 
- main section img {
-   box-sizing: border-box; /* Establecer box-sizing como border-box para incluir el borde en el tamaño de las imágenes */
- }
- 
- /*step 7  week 5 Check, validate, and submit*/
-
-
-/*paso 10 week 4  More Centering*/
-
-
-
-nav a {
-    text-align: center;
- }
- 
- #hero-msg h1, #hero-msg h4 {
-    text-align: center;
- }
- 
- .button-box {
-    text-align: center;
- }
- 
- main section {
-    text-align: center;
- }
- 
-
- /*paso 11 week 4  Adding a container for our message background*/
-
- #background {
-    height: 725px;
+    margin: 0;
 }
 
-/*paso 12 week 4 Setting background colors*/
-/* Aplicar colores de fondo */
-body {
-    background-color: #fcfbfb; /* Color de fondo para el cuerpo de la página */
- }
- 
- header {
-    background-color: rgba(20,30,13, .7); /* Color de fondo para el encabezado */
- }
- 
- nav a:hover {
-    background-color: #0b0c0c; /* Color de fondo al pasar el mouse sobre enlaces de navegación */
-    color: #FFF; /* Cambiar el color del texto al pasar el mouse */
- }
- 
- .book,
- .join {
-    background-color: #3273f4; /* Color de fondo para los elementos con clase .book y .join */
-    color: #FFF; /* Cambiar el color del texto */
- }
- 
- .book:hover,
- .join:hover {
-    background-color: #3881d5; /* Color de fondo al pasar el mouse sobre elementos con clase .book y .join */
-    color: #FFF; /* Cambiar el color del texto al pasar el mouse */
- }
- 
- #background {
-    background-color: #787575; /* Color de fondo para el contenedor de fondo */
- }
- 
- .msg {
-    background-color: rgba(20,30,13, .7); /* Color de fondo para el mensaje */
-    color: #FFF; /* Cambiar el color del texto en el mensaje */
- }
- 
- footer {
-    background-color: #333; /* Color de fondo para el pie de página */
-    color: #FFF; /* Cambiar el color del texto en el pie de página */
- }
- 
-/*paso 13 week 4 */
-/* Cambiar colores del texto */
-nav a {
-    color: #dedcdc; /* Color del texto en los enlaces de navegación */
- }
- 
- nav a:hover {
-    color: #FFF; /* Color del texto al pasar el mouse sobre enlaces de navegación */
- }
- 
- .home-title {
-    color: #0074D9; /* Color del texto en el título de inicio */
- }
- 
- h4 {
-    color: #999494; /* Color del texto en los encabezados h4 */
- }
- 
- .book,
- .join {
-    color: #FFF; /* Color del texto en elementos con clase .book y .join */
- }
- 
- .book:hover,
- .join:hover {
-    color: #FFF; /* Color del texto al pasar el mouse sobre elementos con clase .book y .join */
- }
- 
- .msg h2 {
-    color: #cfc8c8; /* Color del texto en el título h2 dentro del mensaje */
- }
- 
- .msg p {
-    color: #c6bdbd; /* Color del texto en párrafos dentro del mensaje */
- }
- 
- footer {
-    color: #FFF; /* Color del texto en el pie de página */
- }
- 
- footer a {
-    color: #d2dde3; /* Color del texto en enlaces dentro del pie de página */
- }
- 
- footer a:hover {
-    color: #FFF; /* Color del texto al pasar el mouse sobre enlaces dentro del pie de página */
- }
- 
-/*paso 14 week 4 Foreground colors*/
-.logo, .icon {
-    width: 80px; /* Ancho de 80px para el logotipo y los iconos */
- }
- #hero-img {
-    width: 100%; /* Ancho del 100% para la imagen del héroe */
- }
- 
-    
-/*paso 15 week 4  Take off or add the default underline of links */
-
-/* Quitar subrayas de los enlaces y agregarlas al pasar el mouse */
-nav a,
-.book,
-.join,
-footer a {
-   text-decoration: none; /* Quitar subraya */
+h4 {
+    color: var(--headline-color-on-color);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-large;
 }
 
-nav a:hover,
-.book:hover,
-.join:hover,
-footer a:hover {
-   text-decoration: underline; /* Agregar subraya al pasar el mouse */
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
 }
-/* Tamaño de fuente más grande para el texto del pie de página */
-footer p {
-    font-size: 1.2em; /* Tamaño de fuente más grande (ajusta el valor según sea necesario) */
- }
- 
- /* week7_ step1 */
+
+.home-title {
+    font-family: var(--home-title-font-family);
+    font-size: var(--home-title-font-size);
+    margin-top: 10px;
+    color: var(--accent2-color);
+
+}
+
+#navigation_div {
+    background-color: var(--secondary-color);
+    padding: 8px;
+}
+
+.logo {
+    width: 80px;
+}
 
 header {
-   display: grid;
-   grid-template-columns: 150px auto;
-}
-nav {
-   display: flex;
-   justify-content: space-around;
+    margin-bottom: 24px;
+    background-color: var(--secondary-color);
+    display: grid;
+    grid-template-columns: 150px auto;
 }
 
 #logo_link {
-   padding-top: 5px;
-   justify-self: center;
-   align-self: center;
-}     
+    padding-top: 5px;
+}
 
-/* week7_ step2 */
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    font-size: var(--nav-font-size);
+    text-decoration: none;
+    text-align: center;
+    color: var(--accent1-color);
+    align-self: center;
+    padding: 15px;
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
+nav a:visited {
+    text-decoration: none;
+    color: var(--nav-hover-link-color);
+}
+
+nav a:link {
+    text-decoration: none;
+    color: var(--nav-hover-link-color);
+}
+
+#logo_link {
+    padding-top: 5px;
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+
+.hero-rivers {
+    width: 1094px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 40px;
+    text-align: center;
+    background-color: var(--accent1-color);
+}
+
+.hero-rivers-text {
+    grid-column: 1/1;
+    grid-row: 1/1;
+    margin-top: 30px;
+}
+
+.hero-rivers-text h1 {
+    color: var(--headline-color-on-color);
+    font-size: var(--header-font-size-xsmall);
+}
+
+.hero-rivers-text p {
+    color: var(--headline-color-on-color);
+    font-size: var(--paragraph-font-size-small);
+    padding: 40px;
+}
+
+.hero-rivers-img {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.gallery-header h1 {
+    width: 1094px;
+    margin: 10px auto;
+    font-size: var(--header-font-size-xsmall);
+    margin-top: 40px;
+}
+
+.gallery-style-one {
+    width: 1094px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    background-color: var(--accent2-color);
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+.gallery-style-one-image-one {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.gallery-style-one-image-two {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.gallery-style-one-text {
+    grid-column: 3/4;
+
+    color: var(--headline-color-on-color);
+    font-size: var(--paragraph-font-size-small);
+    padding: 10px;
+
+}
+
+.gallery-style-two {
+    width: 1094px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    background-color:var(--secondary-color);
+    box-sizing: border-box;
+}
+
+.gallery-style-two-image-one {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.gallery-style-two-image-two {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.gallery-style-two-text {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    color: var(--headline-color-on-color);
+    font-size: var(--paragraph-font-size-small);
+    padding: 10px;
+
+}
 
 #hero {
-   display: grid;
-   grid-template-columns: 1fr 3fr 1fr;
-   margin-top: -100px; 
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -100px;
+    text-align: center;
+}
+
+#hero-msg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 100px;
+}
+
+#hero img {
+    width: 100%;
+}
+
+#hero_msg h1,
+#hero_msg h4 {
+    text-align: center;
+
 }
 
 #hero-box {
-   grid-column: 1/4;
-   grid-row: 1/3;
-   z-index: -1;
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
 }
 
-#hero-msg h4 {
-   color: white;
-}
- 
-/* week7_ step3 Overlap hero with navigation */
-
-
-#hero-msg {
-   grid-column: 2/3;
-   grid-row: 1/2;
-   margin-top: 100px;
+main section {
+    text-align: center;
 }
 
-/* week7_ step4 Main Grid */
+.button-box {
+    text-align: center;
 
-.card-img, .mountains {
-   width: 100%;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+main section img {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.book,
+.join {
+    background-color: var(--primary-color);
+    border: var(--secondary-color) solid 1px;
+    border-radius: 5px;
+    color: var(--accent1-color);
+    font-family: var(--paragraph-font-size-xlarge);
+    font-size: var(--book-font-size);
+    text-decoration: none;
+    padding: 10px;
+
+}
+
+.book:hover,
+.join:hover {
+    background-color: var(--accent2-color);
+    color: var(--headline-color-on-color)
 }
 
 
-   .rivers-card {
-     grid-area: rivers-card;
-   }
- 
-   .camping-card {
-     grid-area: camping-card;
-   }
- 
-   .rapids-card {
-     grid-area: rapids-card;
-   }
- 
-   #background {
-     grid-area: background;
-   }
- 
-   .mountains {
-     grid-area: mountains;
-   }
- 
-   .msg {
-     grid-area: msg;
-   }
- 
- 
- /* week7_ step5 Footer Layout */
-
-
- footer {
-   background-color: #6f7364;
-   padding: 25px 50px;
-   margin-top: 200px; 
-   display: flex;
-   justify-content: space-around;
-   align-items: center;
+#background {
+    height: 725px;
+    background-color: var(--accent2-color);
+    grid-column: 1/11;
+    grid-row: 4/9;
 }
 
- /* week7_ step6 Enhancements */
 
- .card-img {
-   border: 10px solid #d9c2a3;
-   transition: transform .5s;
-   box-shadow: 5px 5px 10px #6f7364;
-}
-.card-img:hover {
-   opacity: .6;
-   transform: scale(1.1);
+.mountains {
+    width: 100%;
+    grid-column: 2/7;
+    grid-row: 5/8;
+    box-shadow: 5px 5px 10px #6f7364;
 }
 
 .msg {
-   background-color: #6f7364;
-   padding: 35px;
-   grid-column: 6/10;
-   grid-row: 6/7;
-   box-shadow: 5px 5px 10px #6f7364;
-}
-.mountains {
-   width: 100%;
-   grid-column: 2/7;
-   grid-row: 5/8;
-   box-shadow: 5px 5px 10px #6f7364;
+    background-color: var(--accent1-color);
+    box-sizing: border-box;
+    grid-column: 6/10;
+    grid-row: 6/7;
+    box-shadow: 5px 5px 10px #6f7364;
+    padding: 25px;
 }
 
-/* week7_ step7 Responsive Design */
+.msg h2 {
 
+    font-size: var(--header-font-size-small);
+    color: var(--primary-color)
+}
+
+.msg p {
+    font-size: var(--msg-p-font-size);
+    color: var(--paragraph-color-on-color);
+    padding-bottom: 15px;
+}
+
+
+.social {}
+
+
+
+.card-img {
+    border: 10px solid var(--secondary-color);
+    width: 100%;
+    border: 10px solid #d9c2a3;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+.card-img:hover {
+    opacity: .6;
+    transform: scale(1.1);
+}
+
+.rivers-card {
+    margin: 200px 0;
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+
+.camping-card {
+    margin: 200px 0;
+    grid-column: 5/7;
+    grid-row: 2/3;
+}
+
+.rapids-card {
+    margin: 200px 0;
+    grid-column: 8/10;
+    grid-row: 2/3;
+}
+
+.button_box a {
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--accent1-color);
+    text-decoration: none;
+}
+
+footer {
+    background-color: var(--midnight-green-eagle-green);
+    color: var(--primary-color);
+    padding: 25px 50px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer p {
+    font-size: 1.2em;
+
+}
+
+footer a {
+    font-family: var(--paragraph-font);
+    font-size: var(--paragraph-font-xsmall);
+    text-decoration: none;
+    color: var(--primary-color);
+    padding: 20px;
+}
+
+footer a:hover {
+    background-color: var(--nav-hover-background-color);
+    color: var(--nav-hover-link-color);
+}
+
+
+footer .social a {
+    background-color: inherit;
+}
+
+
+footer .social a:hover {
+    background-color: inherit;
+}
+
+footer .social img {
+    float: left;
+    padding-top: 15px;
+}
+
+.icon {
+    width: 80px;
+}
 
 @media screen and (max-width: 900px) {
-   #hero, .home-grid {
-       display: block;
-       height: auto;
-   }
-   nav, footer {
-       flex-direction: column;
-   }
-   nav a {
-       display: block;
-       padding: 15px;
-   }
-   #hero {
-       margin-top: 0;
-   }
-   #hero-msg {
-       margin-top: 0;
-   }
-   #hero-msg h4 {
-       display: none;
-   }
-   .home-title {
-       font-size: 25px;
-       color: #6f7364;
-   }
-   .rivers-card, .camping-card, .rapids-card { 
-       margin: 50px auto;
-       width: 60%;
-   }
-   #background {
-       display: none;
-   }
-   .mountains, .msg {
-       width: 80%;
-       display: block;
-       margin: 0 auto;
-   }
-   footer {
-       margin-top: 25px;
-   }
+
+    #hero,
+    .home-grid {
+        display: block;
+        height: auto;
+    }
+
+    nav,
+    footer {
+        flex-direction: column;
+    }
+
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+
+    #hero {
+        margin-top: 0;
+    }
+
+    #hero-msg {
+        margin-top: 0;
+    }
+
+    #hero-msg h4 {
+        display: none;
+    }
+
+    .home-title {
+        font-size: 25px;
+        color: #6f7364;
+    }
+
+    .rivers-card,
+    .camping-card,
+    .rapids-card {
+        margin: 50px auto;
+        width: 60%;
+    }
+
+    #background {
+        display: none;
+    }
+
+    .mountains,
+    .msg {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    footer {
+        margin-top: 25px;
+    }
 }

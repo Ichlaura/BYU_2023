@@ -49,8 +49,7 @@
 
       <!-- ------------------------contenido------------------------------ -->
 <body>
-    <div id="content" style="max-width: 1600px; margin: 0 auto;">
-
+    
     <header>
         <a id="logo_link" href="index.html">
             <img class="logo" src="images/logo.png" alt="Dry Oar Logo">
@@ -66,51 +65,13 @@
     </header>
   
 
-      <!-- ------------------------Portafolio------------------------------ -->
-
-      <div class="slide">
-        <div class="slide-inner">
-            <input class="slide-open" type="radio" id="slide-1" 
-                  name="slide" aria-hidden="true" hidden="" checked="checked">
-            <div class="slide-item">
-                <img src="images/home1.png">
-            </div>
-            <input class="slide-open" type="radio" id="slide-2" 
-                  name="slide" aria-hidden="true" hidden="">
-            <div class="slide-item">
-                <img src="images/home2.png">
-            </div>
-            <input class="slide-open" type="radio" id="slide-3" 
-                  name="slide" aria-hidden="true" hidden="">
-            <div class="slide-item">
-                <img src="images/home3.png">
-            </div>
-            <label for="slide-3" class="slide-control prev control-1">‹</label>
-            <label for="slide-2" class="slide-control next control-1">›</label>
-            <label for="slide-1" class="slide-control prev control-2">‹</label>
-            <label for="slide-3" class="slide-control next control-2">›</label>
-            <label for="slide-2" class="slide-control prev control-3">‹</label>
-            <label for="slide-1" class="slide-control next control-3">›</label>
-            <ol class="slide-indicador">
-                <li>
-                    <label for="slide-1" class="slide-circulo">•</label>
-                </li>
-                <li>
-                    <label for="slide-2" class="slide-circulo">•</label>
-                </li>
-                <li>
-                    <label for="slide-3" class="slide-circulo">•</label>
-                </li>
-            </ol>
-        </div>
-    </div>
-
-
+     
 
   <!-- ------------------------------------------------------ -->
 
   <div class="gallery-header">
     <h1>
+       STEAM
     </h1>
 </div>
         <div class="gallery-style-two">
@@ -131,31 +92,59 @@
             </div>
         </div>
   
-
-
- <!-- ------------------------linkedlin------------------------------ -->
-
+ <!-- ------------------------carusel------------------------------ -->
  <div class="gallery-header">
     <h1>
-    </h1> 
+       PORTAFOLIO
+    </h1>
+</div>
 
 
- <div class="center-container">
-    <style>
-        .image-container {
-          margin-left: 20px; /* Espacio entre la imagen y el cuadro de texto */
-        }
-      </style>
-     
-        <!-- Agrega tus iconos de redes sociales como enlaces a tus perfiles -->
+     <!-- Slideshow container -->
+     <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="images/programming .jpg" style="width:100%">
+          <div class="text">MOBILE APP</div>
+        </div>
       
-        <a href="https://www.linkedin.com/in/laupao41/" class="linkedin-icon"><img src="images/link.jpg" alt="LinkedIn"></a>
-        <!-- Agrega más iconos de redes sociales según sea necesario -->
- 
- </div>
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="images/sponsor.jpg" style="width:100%">
+          <div class="text">Sponsor</div>
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="images/team.jpg" style="width:100%">
+          <div class="text">TEAM</div>
+        </div>
+      
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    
+
 
   <!-- ------------------------About ------------------------------ -->
 
+
+  <div class="gallery-header">
+    <h1>
+      
+    </h1>
+</div>
   <div class="gallery-header">
     <h1>
     </h1>
@@ -190,6 +179,12 @@
       
 <!-- ------------------------team------------------------------ -->
 
+
+<div class="gallery-header">
+    <h1>
+      Meet my writer and engineer 
+    </h1>
+</div>
           <div class="gallery-header">
             <h1>
             </h1>
@@ -209,6 +204,31 @@
                 </p>
             </div>
         </div>
+
+
+         <!-- ------------------------linkedlin------------------------------ -->
+
+
+
+ < <div class="gallery-header">
+    <h1>
+      
+    </h1>
+</div>
+
+ <div class="center-container">
+    <style>
+        .image-container {
+          margin-left: 20px; /* Espacio entre la imagen y el cuadro de texto */
+        }
+      </style>
+     
+        <!-- Agrega tus iconos de redes sociales como enlaces a tus perfiles -->
+      
+        <a href="https://www.linkedin.com/in/laupao41/" class="linkedin-icon"><img src="images/link.jpg" alt="LinkedIn"></a>
+        <!-- Agrega más iconos de redes sociales según sea necesario -->
+ 
+ </div>
 
 
       <!-- ------------------------Footer------------------------------ -->
@@ -234,6 +254,8 @@
 
     </footer>
 </div>
+
+<script src="JS/script.js"></script>
     </body> 
 </html>
             
